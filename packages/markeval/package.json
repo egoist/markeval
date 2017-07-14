@@ -1,10 +1,10 @@
 {
   "name": "markeval",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "files": [
     "index.js"
   ],
   "dependencies": {
-    "markdown-it-markeval": "^0.1.1"
+    "markdown-it-markeval": "^0.1.2"
   }
 }
