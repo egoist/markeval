@@ -16,8 +16,8 @@ const markeval = require('markdown-it-markeval')
 
 const html = md
   .use(markeval, {
-    // Required if you want to require non-native node modules
-    filename: '/path/to/markdown/file'
+    // Required if you want to require from relative path or `node_modules`
+    cwd: process.cwd() // default
   })
   .render('markdown code')
 ```

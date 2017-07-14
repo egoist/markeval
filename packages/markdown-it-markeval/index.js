@@ -1,6 +1,8 @@
 const req = require('require-from-string')
 
-module.exports = function (md, opts = {}) {
+module.exports = function (md, {
+  cwd = process.cwd()
+} = {}) {
   const originalFence = md.renderer.rules.fence
 
   // eslint-disable-next-line max-params
@@ -9,7 +11,7 @@ module.exports = function (md, opts = {}) {
 
     if (shouldEval(token)) {
       return req(token.content, {
-        filename: opts.filename
+        prependPaths: [cwd]
       })
     }
 

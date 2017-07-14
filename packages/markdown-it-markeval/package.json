@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest"
   },
+  "description": "Pre-evaluate JavaScript in your Markdown code.",
+  "repository": {
+    "url": "egoist/markeval",
+    "type": "git"
+  },
   "engines": {
     "node": ">=6"
   },
