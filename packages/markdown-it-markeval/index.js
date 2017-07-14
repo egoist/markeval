@@ -4,7 +4,7 @@ module.exports = function (md, opts = {}) {
   const originalFence = md.renderer.rules.fence
 
   // eslint-disable-next-line max-params
-  md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+  md.renderer.rules.fence = function (tokens, idx, options, env, self) {
     const token = tokens[idx]
 
     if (shouldEval(token)) {
