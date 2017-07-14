@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+"42foo<pre><code class=\\"language-js\\">module.exports = 'lol'
+</code></pre>
+"
+`;

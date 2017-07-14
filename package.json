@@ -1,0 +1,29 @@
+{
+  "name": "markeval",
+  "version": "0.0.0",
+  "description": "Pre-evaluate JavaScript in your Markdown code.",
+  "repository": {
+    "url": "egoist/markeval",
+    "type": "git"
+  },
+  "scripts": {
+    "test": "lerna bootstrap && lerna run test",
+    "lint": "xo"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "eslint-config-rem": "^3.0.0",
+    "lerna": "^2.0.0-rc.5",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem",
+    "envs": [
+      "jest"
+    ]
+  }
+}

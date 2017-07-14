@@ -1,0 +1,21 @@
+{
+  "name": "markdown-it-markeval",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "files": ["index.js"],
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "lerna": "^2.0.0-rc.5",
+    "markdown-it": "^8.3.1"
+  },
+  "dependencies": {
+    "require-from-string": "^1.2.1"
+  }
+}
