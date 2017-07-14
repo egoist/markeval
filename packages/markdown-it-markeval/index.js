@@ -3,6 +3,7 @@ const req = require('require-from-string')
 module.exports = function (md, opts = {}) {
   const originalFence = md.renderer.rules.fence
 
+  // eslint-disable-next-line max-params
   md.renderer.rules.fence = (tokens, idx, options, env, self) => {
     const token = tokens[idx]
 
